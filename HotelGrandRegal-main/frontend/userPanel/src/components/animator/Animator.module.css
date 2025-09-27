@@ -1,0 +1,40 @@
+.slideContainer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    min-width: 100vw;
+  }
+  
+  .slideLeft {
+    animation: slideInLeft ease-in-out forwards;
+  }
+  
+  .slideRight {
+    animation: slideInRight ease-in-out forwards;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+      

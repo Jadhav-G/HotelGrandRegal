@@ -1,0 +1,123 @@
+#navbar{
+    position: fixed;    top: 0px;
+    width: 100vw;    padding: 40px 20px;
+    display: flex;  align-items: center;    gap: 10px;
+    font-size: clamp(14px, 1.2vw, 35px);
+    z-index: 500;
+}
+
+#brandLogo{
+    width: 3em;
+    z-index: 500;
+}
+
+#brandName{
+    margin-right: auto;
+    font-size: 2em;     color: #fff;
+    z-index: 500;
+}
+
+#menuBtn{
+    padding: 5px 60px;  margin-right: -50px;
+    background-color: #160c0c;
+    display: flex;  gap: 20px;  align-items: center;
+    border-radius: 100px;   border-top-right-radius: 0px;    border-bottom-right-radius: 0px;   border: 2px solid #534444;    border-right: none;
+    height: 2.5em;
+    color: white;
+    z-index: 500;
+}
+
+#menuBtn img{
+    width: 2em; height: 2em;
+}
+
+
+.sidebar{
+    list-style: none;
+    background-color: #f5efe9;
+    position: fixed;    top: 6em;   right: 0px;
+    display: flex;  flex-direction: column;
+    width: max-content; padding: 10px 30px;
+    border-radius: 25px;    border-top-right-radius: 0px;   border-bottom-right-radius: 0px;   border: 2px solid #4f4040;
+    transition: transform 0.3s;
+}
+
+.hidden{
+    transform: translateX(100%);
+}
+
+.visible{
+    transform: translateX(0%);
+}
+
+.sidebar li{
+    border-bottom: 1px dotted #4f4040;
+    width: 100%;
+}
+
+.sidebar a{
+    display: flex;  align-items: center;    gap: 10px;
+    text-decoration: inherit;
+    color: #4f4040;
+}
+
+#navbar ul{
+    display: flex;      align-items: center;
+    list-style: none;
+}
+
+#mNavOptions{
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; /* ensure it's on top */     width: 100vw;
+    background-color: #160c0c;
+    border: 2px solid #1d1111;      border-bottom: none;    border-radius: 20px;        border-bottom-right-radius: 0px;     border-bottom-left-radius: 0px;
+    height: 6em;
+    backdrop-filter: blur(3px);
+}
+
+#selectedM{
+    background-color: #291717;
+    border: 3px solid #160c0c;      border-bottom: none;        border-radius: 20px;        border-bottom-right-radius: 0px;     border-bottom-left-radius: 0px;
+}
+
+#mNavOptions li{
+    width: calc(100% / 5);
+}
+
+#mNavOptions a{
+    text-decoration: none;
+    padding: 10px;      height: 4em;
+    display: flex;      flex-direction: column;     align-items: center;    justify-content: center;
+    color: #f5efe9;     font-size: 1.5em;   cursor: pointer;
+}
+
+#dNavOptions{
+    font-weight: bold;
+    gap: clamp(20px, 3vw, 30px);
+    cursor: pointer;
+}
+
+#tNavOptions{
+    display: flex;  gap: 20px;  justify-content: center;
+    font-weight: bold;
+    color: #7a5a5a;
+    padding: 10px;
+    width: 100%;
+    position: fixed;    top: 7em;    left: 0px;
+    background-color: #f5efe9;  
+    box-shadow:  #8d6969 0px 10px 25px;
+    cursor: pointer;
+}
+
+#dNavOptions a, #tNavOptions a{
+    text-decoration: none;
+    color: inherit;
+    font-style: inherit;
+}
+
+#selected{
+    border-bottom: 2px solid #8d6969;
+}

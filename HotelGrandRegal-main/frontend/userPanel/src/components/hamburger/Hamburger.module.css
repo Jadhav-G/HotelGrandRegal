@@ -1,0 +1,37 @@
+.container{
+    padding: 0px;   margin: 0px;
+    box-sizing: border-box;
+    aspect-ratio: 1.5 / 1;      height: 50%;
+    display: flex;      flex-direction: column;     align-items: center;      gap: 20%;
+}
+
+.line{
+    width: 100%;    height: 20%;
+}
+
+.top{
+    transition: transform 0.4s ease;
+}
+
+.bottom{
+    transition: transform 0.4s ease;
+}
+
+.middle{
+    transition: width 0.3s ease;
+}
+
+.cross .top{
+    transform: translateY(200%) rotate(45deg);
+    transition: transform 0.4s ease;
+}
+
+.cross .bottom{
+    transform: translateY(-200%) rotate(-45deg);
+    transition: transform 0.4s ease;
+}
+
+.cross .middle{
+    width: 0px;
+    transition: width 0.3s ease;
+}

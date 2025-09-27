@@ -1,0 +1,94 @@
+.container {
+    width: 90%;
+    background-color: #f5f5f3;
+    border-radius: 25px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.mapBox {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    border: 3px solid #241b1f;
+}
+
+.holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.address {
+    font-size: 18px;
+    color: #382930;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.nearby {
+    font-size: 18px;
+    background-color: #382930;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 10px;
+}
+
+.nearby h4 {
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #080401;
+    color: white;
+}
+
+.nearby ul {
+    list-style: none;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    justify-content: start;
+}
+
+.nearby ul li{
+    text-align: start;
+}
+
+.nearby img {
+    width: 20px;
+    aspect-ratio: 1 / 1;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+@media (max-width: 775px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .mapBox {
+        width: 100%;
+    }
+
+    .holder {
+        width: 100%;
+    }
+}

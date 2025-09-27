@@ -1,0 +1,119 @@
+.container{
+    width: max-content;
+    max-width: calc(100vw - clamp(20px, 15vw, 200px));
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 50px;
+    justify-content: left;
+    padding: 100px 20px;
+    padding-bottom: 0px;
+}
+
+.roomBox{
+    width: 300px;
+    background-color: #1d1e2777;
+    box-shadow: 0px 0px 20px #423939;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    transition: scale 0.2s normal;
+    min-width: none;
+    min-width: 290px;
+    cursor: pointer;
+}
+
+.roomBox:hover{
+    scale: 1.1;
+}
+
+.thumbnail{
+    background-color: yellow;
+    width: 100%;
+    aspect-ratio: 1.6/ 0.9;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.name{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-seri;
+    color: rgb(255, 250, 244);
+    margin-top: 10px;
+}
+
+.desc{
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+    padding: 0px 20px;
+    color: #ffffffe5;
+    font-weight: 500;
+    text-align: center;
+}
+
+.featureBox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 3px 10px;
+}
+
+.feature{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    gap: 2px;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.feature h4{
+    width: max-content;
+    text-wrap: nowrap;
+    font-size: 10px;
+    text-align: center;
+}
+
+.feature img{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0px;
+}
+
+.priceBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.price{
+    width: 220px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12;
+}
+
+.price span{
+    font-size: 20px;
+    font-family: anton;
+}
+
+.priceBox hr{
+    width: 100%;
+    border: 1ps solid white;
+}

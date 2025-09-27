@@ -1,0 +1,211 @@
+.container{
+    width: 100vw;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 200px;
+}
+
+.controller{
+    display: flex;
+    position: relative;
+    background-color: #0c0000;
+    border: 0px;
+    border-radius: 50px;
+    color: #0c0000;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+.controller span{
+    z-index: 1;
+    margin: 5px 15px;
+}
+
+.menuHolder{
+    position: absolute;
+    width: 100vw;
+    height: 98%;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0px;
+    translate: calc(100% - 30px);
+}
+
+.show .menuHolder{
+    backdrop-filter: blur(2px);
+}
+
+.show .content{
+    box-shadow: 0px 0px 1000px #000000;
+}
+
+.showBtn{
+    background-color: #0c0000;
+    color: white;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    padding: 20px 0px;
+    min-width: 30px;
+    border: 0px;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 0px 0px 2cap rgb(39, 37, 37);
+}
+
+.menuBox{
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hideBtn{
+    writing-mode: vertical-lr;
+    position: absolute;
+    padding: 20px 0px;
+    min-width: 30px;
+    background-color: #0c0000;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.content{
+    min-width: 100%;
+    min-height: max-content;
+    background-color: red;
+    background-color: whitesmoke;
+    border-radius: 35px 0px 0px 35px;
+    padding-left: 30px;
+}
+
+.show{
+    animation: show 0.2s ease forwards;
+}
+
+.hide{
+    animation: hide 0.2s ease forwards;
+}
+
+.slider{
+    position: absolute;
+    height: 100%;
+    background-color: white;
+    z-index: 0;
+    right: 0px;
+    top: 0px;
+    border-radius: 50px;
+}
+
+.left{
+    animation: moveLeft 0.5s ease forwards;
+}
+
+.right{
+    animation: moveRight 0.5s ease forwards;
+}
+
+@keyframes moveRight {
+    0%{
+        translate: 0%;
+        width: 60%;
+    }
+    100%{
+        translate: -150%;
+        width: 40%;
+    }
+}
+
+@keyframes moveLeft {
+    0%{
+        translate: -100%;
+        width: 40%;
+    }
+    100%{
+        translate: 0%;
+        width: 60%;
+    }
+}
+
+@keyframes show {
+    0%{
+        translate: calc(100% - 30px);
+    }
+    100%{
+        translate: -30px;
+    }
+}
+
+@keyframes hide {
+    0%{
+        translate: -30px;
+    }
+    100%{
+        translate: calc(100% - 30px);
+    }
+}
+
+.tarrifList{
+    display: flex;
+    max-width: 95vw;
+    gap: 30px;
+    overflow-x: scroll;
+}
+
+.tarrifView{
+    background-color: aliceblue;
+    min-width: 250px;
+    height: max-content;
+    border-radius: 15px;
+}
+
+.tarrifView .header{
+    background-color: #0c0000;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px 10px;
+    padding-bottom: 0px;
+}
+
+.tarrifView .price{
+    background-color: #0c0000;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px 10px;
+    padding-top: 5px;
+    font-size: 0.9em;
+}
+
+.inclutionBox{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10px;
+}
+
+.inclution{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px;
+}
+
+.inclution div{
+    width: 10px;
+    aspect-ratio: 1 / 1;
+    background-color: #0c0000;
+    border-radius: 5px;
+}

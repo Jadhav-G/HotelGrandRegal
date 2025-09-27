@@ -1,0 +1,41 @@
+.frame{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.div{
+    background-color: var(--bgColor);
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.top1{
+    top: calc(clamp(6px, 10%, 10px) * -1);
+    right: calc(clamp(6px, 10%, 10px) * -1);
+}
+
+.top2{
+    top: calc(clamp(6px, 10%, 10px) * -1);
+    left: calc(clamp(6px, 10%, 10px) * -1);
+}
+
+.bottom1{
+    bottom: calc(clamp(6px, 10%, 10px * -1));
+    left: calc(clamp(6px, 10%, 10px) * -1);
+}
+
+.bottom2{
+    bottom: calc(clamp(6px, 10%, 10px) * -1);
+    right: calc(clamp(6px, 10%, 10px) * -1);
+}
+
+.img{
+    border: 8px solid var(--bgColor);
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}

@@ -1,0 +1,220 @@
+.container{
+    min-width: 250px;
+    max-width: 600px;
+    margin: 50px;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+.header span{
+    border: 1px solid rgb(39, 39, 39);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.header hr{
+    min-width: 110%;
+    margin: 5px auto;
+    border: 0px;
+    border-top: 1px solid gray;
+}
+
+.form  input, .form select{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0px 0px 1px gray;
+    width: max-content;
+    font-size: 15px;
+}
+
+.dates{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    row-gap: 10px;
+}
+
+.dates div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    min-width: 120px;
+    max-width: 200px;
+    flex: 1;
+    gap: 10px;
+}
+
+.dates input{
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.name input{
+    min-width: 150px;
+    max-width: 250px;
+    /* width: calc(50% - 55px); */
+    flex: 1;
+}
+
+.contact{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact input{
+    flex: 1;
+    max-width: 250px;
+}
+
+.contact [type="email"]{
+   flex-grow: 1;
+   min-width: max-content;
+}
+
+.personal{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 10px;
+    padding: 0px 30px;
+}
+
+.tarrifBox{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+    row-gap: 30px;
+    padding: 0px 30px;
+}
+
+.vegBox, .planBox{
+    display: flex;
+    flex: content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+
+.vegBox span{
+    min-width: max-content;
+    max-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.planBox select{
+    width: 100%;
+    max-width: 130px;
+}
+
+.guest{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.extraBox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center; 
+    justify-content: start;
+ }
+ 
+ .extraItem{
+    max-width: max-content;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     flex: 1;
+     font-size: 14px;
+ }
+ 
+ .extraItem label{
+     width: max-content;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+ 
+ .extraItem img{
+     width: 15px;
+     aspect-ratio: 1 / 1;
+     border-radius: 50%;
+ }
+
+ .nextBtn{
+    width: max-content;
+    padding: 5px 20px;
+    margin: 50px;
+    margin-left: 50%;
+    margin-bottom: 10px;
+    translate: -50%;
+}
+
+.innerPopup{
+    width: calc(100% + 70px);
+    height: 100%;
+    background-color: #000000cc;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.innerPopupHolder{
+    background-color: white;
+    width: max-content;
+    margin: auto;
+    margin-top: 30vh;
+    /* transform: translateY(-200%); */
+    border-radius: 15px;
+}
+
+.innerPopupHolder .closeButton{
+    background-color: #00000000;
+    border: 0px;
+    font-size: 20px;
+    text-align: right;
+    width: 100%;
+    padding: 5px 20px;
+}

@@ -1,0 +1,326 @@
+.container{
+    min-width: 250px;
+    margin: 50px;
+}
+
+.container h3{
+    text-align: center;
+}
+
+.holder{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.holder span{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    cursor: pointer;
+}   
+
+.holder ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: black;
+}
+
+.container img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.holder a{
+    text-decoration: none;
+}
+
+
+/*Book step 2*/
+.container2{
+    max-width: 100vw;
+    width: 700px;
+    height: max-content;
+    margin: auto;
+    min-width: 250px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* position: relative; */
+}
+
+.innerPopup{
+    width: calc(100% + 70px);
+    height: 100%;
+    background-color: #000000cc;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.innerPopupHolder{
+    background-color: white;
+    width: max-content;
+    margin: auto;
+    margin-top: 30vh;
+    /* transform: translateY(-200%); */
+    border-radius: 15px;
+}
+
+.innerPopupHolder .closeButton{
+    background-color: #00000000;
+    border: 0px;
+    font-size: 20px;
+    text-align: right;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+.header span{
+    border: 1px solid rgb(39, 39, 39);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.header hr{
+    min-width: 110%;
+    margin: 5px auto;
+    border: 0px;
+    border-top: 1px solid gray;
+}
+
+.section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 10px;
+    padding: 0px 30px;
+}
+
+.section input, .section select{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0px 0px 1px gray;
+    width: max-content;
+    font-size: 15px;
+}
+
+.inputBox1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 10px;
+    flex: 1;
+    min-width: 150px;
+}
+
+.inputBox1 label{
+    width: 100%;
+}
+
+.inputBox1 input{
+    width: 100%;
+    font-size: 13px; 
+}
+
+.name{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.name input{
+    min-width: 150px;
+    width: calc(50% - 55px);
+    flex: 1;
+}
+
+.contact{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact input{
+    flex: 1;
+}
+
+.contact [type="email"]{
+   flex-grow: 1;
+   min-width: max-content;
+}
+
+.guestAddBox{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 30px;
+    padding-bottom: 20px;
+}
+
+.guestAddBox input{
+    padding: 3px 10px;
+    box-shadow: 0px 0px 1px gray;
+}
+
+.guestAddBox button, .addGuestBtn{
+    padding: 5px 20px;
+    border: 0px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.addGuestBtn{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.guestListBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guestList .guestRow{
+    width: max-content;
+}
+
+.guestList th, .guestList td{
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.bin{
+    cursor: pointer;
+}
+
+.extraBox{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
+   align-items: center; 
+   justify-content: center;
+}
+
+.extraItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    font-size: 14px;
+}
+
+.extraItem label{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.extraItem img{
+    width: 15px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.specificationLabel{
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.textarea{
+    width: 100%;
+}
+
+.nextBtn{
+    width: max-content;
+    padding: 5px 20px;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+
+/*Bill*/
+
+.billHolder{
+    padding: 0px 30px;
+}
+
+.billHolder hr{
+    margin-bottom: 20px;
+}
+
+.billTable, .finalAmountTable{
+    padding: 20px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.billHeader{
+    font-weight: bold;
+}
+
+.billValueHeader{
+    border-top: 1px solid gray;
+    transform: translateX(10px);
+}
+
+.billValueHeader td{
+    padding-right: 30px;
+}
+
+.finalAmountTable{
+    background-color: rgb(214, 210, 210);
+    width: 100%;
+    padding: 20px;
+    /* margin: 20px; */
+}
+
+.cnfrmBtn{
+    margin: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 20px;
+    font-weight: bold;
+}

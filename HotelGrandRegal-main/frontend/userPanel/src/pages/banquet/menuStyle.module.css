@@ -1,0 +1,75 @@
+.container{
+    width: 100%;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.catHolder{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    height: max-content;
+    min-height: 35px;
+    gap: 30px;
+    list-style: none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px 30px;
+    background-color: #0c0000;
+    color: white;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.catHolder li{
+    cursor: pointer;
+    min-height: max-content;
+    padding: 3px;
+    text-wrap: nowrap;
+}
+
+.selected{
+    border-bottom: 2px solid #fff;
+}
+
+.menuBox{
+    width: 95%;
+    max-height: 100%;
+    overflow-y: scroll;
+    margin: 0px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 10px;
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    padding: 0px 50px;
+}
+
+.menuBox img{
+    width: clamp(200px, 30vw, 300px);
+    height: 200px;
+    background-color: green;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menuBox ul{
+    list-style: none;
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: bold;
+    margin: 20px;
+    gap: 10px;
+    column-gap: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 200px;
+    min-width: 300px;
+    flex: 1;
+    justify-content: space-evenly;
+}

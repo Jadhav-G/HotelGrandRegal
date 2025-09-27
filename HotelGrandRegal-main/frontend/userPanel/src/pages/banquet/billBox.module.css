@@ -1,0 +1,35 @@
+.container{
+    width: calc(100% - 30px);
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.header1 td{
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    background: rgb(228, 228, 228);
+}
+
+.header2 td{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.values td{
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.totalHeader, .totalCost{
+    background-color: gray;
+    margin: 0px;
+    padding: 0px;
+    min-width: calc(100% + 30px);
+    margin-left: -15px;
+}

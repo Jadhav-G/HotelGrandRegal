@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'ITC';
+    src: url('../fonts/ITCBenguiatStdBookCn.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'anton';
+    src: url(../fonts/anton.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calistoga';
+    src: url(../fonts/Calistoga-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'league';
+    src: url(../fonts/LeagueSpartan-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bodoni';
+    src: url(../fonts/BodoniFLF-BoldItalic.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arimo';
+    src: url(../fonts/Arimo-VariableFont_wght.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

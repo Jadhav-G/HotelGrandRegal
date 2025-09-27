@@ -1,0 +1,115 @@
+.main{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.ribbon{
+    min-width: 100vw;
+    background-color: #140d10cc;
+    height: 250px;
+}
+
+.container{
+    transform: translateY(-25%);
+    width: calc(100vw - clamp(10px, 15vw, 200px));
+    margin: auto;
+    height: 80vh;
+    background-color: #1f161a;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 0px 50px 50px 50px;
+    box-shadow: 5px 5px 5px 5px 5px white;
+    box-shadow: 0 0 100px #534242;
+}
+
+.container h2{
+    color: white;
+    font-family: bodoni, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.container h4{
+    color: white;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -90px;
+    text-align: center;
+}
+
+.superHolder{
+    background-color: #362b3080;
+    width: calc(95% + calc(110px - clamp(20px, 15vw, 100px)));
+    min-height: 45%;
+    border-radius: 15px;
+}
+
+.childholder{
+    margin: auto;
+    max-width: 95vw;
+    height: calc(max-content + 25px);
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    /* padding-left: 850px; */
+    gap: 30px;
+    transform: translateY(-25%);
+    overflow: scroll;
+}
+
+
+.childholder::-webkit-scrollbar{
+    display: none;
+}
+
+.reviewBox{
+    background-color: #F5EFE9;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-width: 250px;
+    max-width: 90vw;
+    min-height: 200px;
+}
+
+.dp{
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-top: -20px;
+}
+
+.reviewBox h6{
+    font-size: 20px;
+    color: #1a1816;
+}
+
+.reviewBox p{
+    font-size: 15px;
+    color: #1a1816;
+    max-width: 90%;
+    text-align: center
+}
+
+.starBox{
+    height: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.fullStar, .emptyStar, .halfStar{
+    width: 15px;
+}

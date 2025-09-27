@@ -1,0 +1,93 @@
+.form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-height: 95vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.holder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    column-gap: 50px;
+}
+
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    flex: 1;
+}
+
+.section h2{
+    margin: 20px;
+}
+
+.hr{
+    width: 100%;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+    gap: 5px;
+}
+
+.inputBox input, .inputBox select{
+    border: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.includes{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160px;
+    overflow-y: scroll;
+}
+
+.addSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addSection input{
+    border: 0px;
+    border-radius: 50px 0% 0% 50px;
+    padding: 5px 20px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.addSection button{
+    border: 0px;
+    border-radius: 0px 50px 50px 0px;
+    padding: 5px 20px;
+    box-shadow: 0px 0px 3px gray;
+    text-wrap: nowrap;
+    width: max-content;
+}
+
+.submit{
+    padding: 5px 30px;
+    border-radius: 15px;
+    background-color: #5454e6;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+}

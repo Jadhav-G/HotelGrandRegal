@@ -1,0 +1,195 @@
+.container{
+    min-width: calc(100vw - clamp(0px, 15vw, 300px));
+    max-width: 1150px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    background-color: #270e0986;
+    box-shadow: 0px 0px 20px rgb(61, 38, 38);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0px 30px;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.exit{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px 5px;
+    border-radius: 0px 15px 0px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: chocolate;
+    border: 0px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.tContainer{
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    aspect-ratio: 1.8 / 0.8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.tContainer h1{
+    width: 70%;
+    font-size: 9vw;
+    text-align: center;
+    margin: auto;
+    font-family: anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    z-index: 1;
+}
+
+.header{
+    width: 94%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: ITC, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header hr{
+    width: 100%;
+    /* border: 1px solid #291b00 ; */
+    border: 1px solid white;
+}
+
+.header h3{
+    /* color: #291b00 ; */
+    color: white;
+    font-size: clamp(24px, 6vw, 28px);
+}
+
+.desc{
+    width: 90%;
+    font-size: clamp(15px, 2vw, 20px);
+    color: #fff;
+    text-align: justify;
+    margin: 5px auto;
+    margin-top: 10px;
+    font-family: arimo, sans-serif;
+    text-align: center;
+}
+
+.galleryBox{
+    max-width: 90%;
+    width: 100%;
+    height: 200px;
+    overflow-x: scroll;
+    display: flex;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.galleryBox img{
+    height: 100%;
+    min-width: 300px;
+}
+
+.aminityBox{
+    max-width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #fff;
+}
+
+.aminityBox span{
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    /* width: 140px; */
+    flex: 1 1 100px; /* Try to be 200px wide, but flexible */
+    min-width: max-content;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: clamp(10px, 1vw, 16px)
+}
+
+.aminityBox span img{
+    width: clamp(10px, 1vw, 16px);
+    aspect-ratio: 1 / 1;
+}
+
+.holder{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding: 10px 50px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.holder .ruleBox{
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ruleBox span{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-wrap: wrap;
+    color: #fff;
+}
+
+.ruleBox img{
+    width: 20px;
+    height: 20px;
+}
+
+.holder button{
+    box-shadow: 0px 0px 2px rgb(17, 11, 11);
+    width: max-content;
+    padding: 3px 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: 0px;
+    margin: auto;
+}
+
+@media (max-width : 450px){
+    .tContainer{
+        aspect-ratio: 1.8 / 1.6;
+    }
+}
+
+.whiteImage {
+    filter: brightness(0) invert(1);
+    margin-right: 5px;
+}

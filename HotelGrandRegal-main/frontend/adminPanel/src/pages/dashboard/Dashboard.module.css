@@ -1,0 +1,81 @@
+.container{
+    width: calc(100vw - clamp(10px, 15%, 200px));
+    margin: auto;
+}
+
+.header{
+    font-size: 1.8em;
+    color: #020222;
+}
+
+.container hr{
+    margin-bottom: 30px;
+}
+
+.dashPoints{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.dashcard{
+    min-width: max-content;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px #a3c2ff;
+    border-radius: 10px;
+    width: max-content;
+}
+
+.animateDash{
+    animation: blink 1s normal infinite;
+}
+
+.dashcard h2{
+    background-color: #a3c2ff;
+    width: 100%;
+    text-align: center;
+    min-height: 80px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+    color: black;
+}
+
+.contentHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #020222;
+}
+
+.content span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.05;
+    }
+    100%{
+        scale: 1;
+    }
+}

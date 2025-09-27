@@ -1,0 +1,122 @@
+.container{
+    width: max-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 125px;
+    margin-bottom: 0px;
+}
+
+.ribbon{
+    position: absolute;
+    bottom: -30px;
+    min-width: 110%;
+    height: 100px;
+    background-color: goldenrod;
+    clip-path: polygon(0% 0%, 50% 40%, 100% 0%, 100% 100%, 0% 100%);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.holder{
+    background-color: rgba(0, 16, 31, 0.651);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    padding: 30px clamp(0px, 5vw, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    max-width: 98vw;
+    width: max-content;
+}
+
+.holder h2{
+    font-size: 1.1em;
+    text-align: center;
+    color: #e2a816;
+}
+
+.holder hr{
+    width: 110%;
+    margin-left: -5%;
+    margin: 20px 0px;
+    border: 1px solid goldenrod;
+}
+
+.basicHolder{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.basic{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+
+.basic input{
+    background-color: #ffffff00;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    border-bottom: 1px solid white;
+    /* box-shadow: 0px 0px 3px gray; */
+    padding: 4px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.starBox{
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.starBox img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.form h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.form textarea{
+    display: block;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.form button{
+    padding: 3px 30px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 20px auto;
+    display: block;
+    border: 0px;
+    color: white;
+    border-radius: 15px;
+    background-color: goldenrod;
+}

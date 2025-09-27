@@ -1,0 +1,122 @@
+#menuBox{
+    animation: visible ease 0.2s;
+    width: calc(100vw - clamp(50px, 10vw, 200px));      height: calc(100vh - 150px);
+    margin: auto;    padding: 30px;
+    margin-bottom: 100px;
+    margin-top: 0px;
+    display: flex;    align-items: center;    flex-direction: column;     gap: 10px;
+    background-color: #382930aa;    font-size: clamp(14px, 1.2vw, 35px);    border-radius: 50px;
+}
+
+#menuBox h3{
+    background-color: #362121;    border: 3px solid #36212163;      border-top: none;   border-radius: 20%;     color: white;
+    padding: 5px 80px;
+}
+
+#menuBox ul{
+    width: 95%;
+    display: flex;      justify-content: center;    flex-wrap: wrap;    gap: 20px;
+    text-decoration: none;  list-style: none;    color: white;
+}
+
+#lastItem{
+    margin-left:auto;
+}
+
+#menuBox ul a{
+    text-decoration: inherit;   color: inherit;    font-weight: bold;
+}
+
+#menuBox #menuLine{
+    width: 95%;
+    border: 0.5px solid rgba(34, 15, 0, 0.623);
+}
+
+.selected{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+#menuCard{
+    width: 100%;    max-height: 80%;
+    overflow: auto;
+    padding: 10px 0px;
+}
+
+#menuCard::-webkit-scrollbar{
+    display: none;
+}
+
+.menuCardCat{
+    padding: 10px;
+    display: flex;  flex-direction: column;   align-items: center;
+    font-size: 10px;    color: white;
+}
+
+.menuCardCatName{
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #b9a8a8;   border-radius: 15%;
+    color: #f8f2d3;     text-align: center;
+}
+
+.menuList{
+    width: 100%;
+    padding: 0px 20px;
+    padding-left: 0px;
+    display: grid;      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));    gap: 20px;
+}
+
+.menuCardItem{
+    min-width: 270px;
+    /* width: 100%; */
+    padding: 12px;      margin: auto;
+    border-radius: 100px;   border: 5px solid #473131;
+    display: grid;    grid: repeat(auto, 3) / 10em calc(100% - 10em);   column-gap: 30px;
+    background-color: #fbf3cedd;    color: #362121;
+}
+
+.dishImg{
+    height: 10em;   width: 10em;
+    margin: -20px;
+    grid-area: 1/1/4/2;
+    border-radius: 50%;     border: 5px solid #473131;
+}
+
+.dishName{
+    grid-area: 1/2/2/3;
+    font-size: 1.8em;
+}
+
+.dishDesc{
+    grid-area: 3/2/4/3;
+    font-size: 1.3em;    font-style: italic;     color: #653E3E;
+}
+
+.dishPrice{
+    grid-area: 2/2/3/3;
+    font-size: 1.6em;   font-weight: bold;
+}
+
+#subCatList{
+    padding: 3px 10px;
+    border: 2px solid #fbf3ceaa;    border-top: none;   border-left: none;   border-radius: 5px;
+    background-color: #fbf3ce00;    color: rgb(255, 255, 255);  font-size: 1em;   font-weight: bold;
+}
+
+#vegBtn{
+    margin-right: 5px; 
+    accent-color: green;
+}
+
+@keyframes visible {
+    0%{
+        height: 0px;
+        filter: opacity(0%);
+    }
+    100%{
+        filter: opacity(100%);
+    }
+}
+
+

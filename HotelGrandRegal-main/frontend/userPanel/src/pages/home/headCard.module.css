@@ -1,0 +1,116 @@
+.container{
+    min-width: 100vw;   max-height: 100vh;
+    margin-top: -150px;
+    display: flex;  align-items: center;  justify-content: space-between;
+    font-size: clamp(40px, 3vw, 65px);
+    position: relative;
+}
+
+.headImg{
+    border: 8px solid #492c2c;
+    border-top: 0px;
+    max-height: 100%;
+    width: clamp(500px, 55%, 1000px);
+    margin-left: -12px;
+    border-bottom-right-radius: 25%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 30% 100%, 0% 70%);
+    object-fit: cover;
+    object-position: center;
+}
+
+.brandDetails{
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.brandDetails a{
+    text-decoration: none;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.brandDetails a hr{
+    width: 100px;
+    border: 1px solid white;
+}
+
+.brandDetails img{
+    width: 40%;
+    transform: rotate(90deg);
+}
+
+.brandDetails h1{
+    font-size: 3.5em;
+    text-wrap: wrap;
+    text-align: center;
+    margin: 0px;
+    margin-top: -0.2em;
+    /* letter-spacing: 2px; */
+    margin-bottom: 0px;
+    font-family: ITC, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white    ;
+}
+
+.brandDetails h2{
+    font-size: 3em;
+    text-wrap: wrap;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0px;
+    margin-bottom: 0px;
+    font-family: ITC, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white    ;
+}
+
+
+
+.brandDetails h4{
+    font-size: 0.7em;
+    text-wrap: wrap;
+    text-align: center;
+    margin: 0px 80px;
+    width: 16.2em;
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+@media (max-width : 775px){
+    .container{
+        flex-direction: column;
+        font-size: clamp(20px, 6.5vw, 35px);
+        height: 90vh;
+        position: relative;
+    }
+    .brandDetails{
+        margin-top: 20px;
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+    }
+    .headImg{
+        width: 100%;
+        max-height: 65vh;
+    }
+}
+
+@media (max-width : 450px){
+    .brandDetails{
+        bottom: 80px;
+    }
+}

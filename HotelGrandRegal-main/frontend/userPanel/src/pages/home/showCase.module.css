@@ -1,0 +1,138 @@
+.container{
+    max-width: calc(100% - clamp(20px, 10%, 200px));
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-size: clamp(165px, 25vw, 250px);
+    margin: 250px auto;
+    margin-bottom: 85px;
+}
+
+.label{
+    position: relative;
+}
+
+.label img{
+    width: 300px;
+    position: absolute;
+    bottom: -20px;
+    left: -50px;
+    transform: rotate(8deg);
+}
+
+.titlePt1{
+    font-family: calistoga, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-align: center; 
+}
+
+.titlePt2{
+    font-family: calistoga, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.labelBox{
+    transform: translateX(-80px) rotate(270deg);
+    color: white;
+}
+
+.frame{
+    background-color: #653e3e;
+    width: 1.25em;
+    height: 1.25em;
+    transform: rotate(45deg);
+    border-radius: 15px;
+    position: absolute;
+    left: 100px;
+}
+
+.frame img{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg) scale(1.5) translateX(-20px);
+}
+
+.rotate3D{
+    animation: rotate 0.5s ease-in-out forwards;
+}
+.island{
+    width:85%;
+    height: 85%;    
+    padding: 30px;
+    background-color: #feefe9;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: calc(0.9em + calc(100px - 2.2vw));
+}
+
+.island h3{
+    font-size: 0.12em;
+    font-family: league, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 5px;
+}
+
+.island p{
+    font-size: 0.09em;
+    width: 98%;
+    text-align: left;
+    color: #382930;
+    font-family: ITC, 'Courier New', Courier, monospace;
+    margin-left: 10px;
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotateY(0deg) rotate(45deg);
+    }
+    25%{
+        transform: rotateY(90deg) rotate(45deg);
+    }
+    50%{
+        transform: rotateY(180deg) rotate(45deg);
+    }
+    75%{
+        transform: rotateY(270deg) rotate(45deg);
+    }
+    100%{
+        transform: rotateY(360deg) rotate(45deg);
+    }
+}
+
+@media (max-width : 775px){
+    .container{
+        flex-direction: column;
+        min-height: 70vh;
+    }
+    .island{
+        width: 90%;
+        height: 95%;
+        padding-top: 1.5em;
+        padding-left: 20px;
+        font-size: clamp(180px, 35vw, 200px);
+        transform: translateY(-15%);
+        z-index: -1;
+    }
+    .island h3{
+        text-align: center;
+    }
+    .island p{
+        text-align: center;
+    }
+    .frame{
+        top: 0px;
+        left: calc(50% - 75px);
+    }
+    .labelBox{
+        transform: rotate(0deg) translateY(500%) translateX(-5%);
+        color: #382930;
+        scale: 0.55;
+        text-shadow: 0px 0px 20px white;
+    }
+}

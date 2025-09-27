@@ -1,0 +1,268 @@
+.super{
+    width: 100vw;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.controller{
+    display: flex;
+    position: relative;
+    background-color: #0c0000;
+    border: 0px;
+    border-radius: 50px;
+    color: #0c0000;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+.controller span{
+    z-index: 1;
+    margin: 5px 15px;
+}
+
+.slider{
+    position: absolute;
+    height: 100%;
+    background-color: white;
+    z-index: 0;
+    right: 0px;
+    top: 0px;
+    border-radius: 50px;
+}
+
+.left{
+    animation: moveLeft 0.5s ease forwards;
+}
+
+.right{
+    animation: moveRight 0.5s ease forwards;
+}
+
+.container{
+    width: calc(100vw - clamp(10px, 15vw, 250px));
+    margin: auto;
+    padding: 30px 0px;
+    min-height: max-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.thumbnail{
+    background-color: #0c0000;
+    border: 0px;
+    height: 300px;
+    width: 50%;
+    margin: 50px 0px;
+    z-index: 2;
+    position: absolute;
+    left: 0px;
+    border-radius: 15px;
+}
+
+.blogBox1{
+    z-index: 1;
+    width: 50%;
+    padding: 30px;
+    min-height: 30vh;
+    height: 300px;    
+    margin: 5px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogBox2{
+    z-index: 1;
+    width: 50%;
+    padding: 30px;
+    min-height: 30vh;
+    height: 300px;
+    margin: 5px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.isLand{
+    background-color: #f5efe9;
+    width: calc(100% - 80px);
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.moveRight .thumbnail{
+    animation: moveImgRight 0.5s ease forwards;
+}
+
+.moveRight .isLand{
+    animation: moveIsLeft 0.4s ease forwards;
+}
+
+.moveLeft .thumbnail{
+    animation: moveImgLeft 0.5s ease forwards;
+}
+
+.moveLeft .isLand{
+    animation: moveIsRight 0.4s ease forwards;
+}
+
+@keyframes moveIsRight {
+    0%{
+        translate: -80px;
+    }
+    100%{
+        translate: 0px;
+    }
+}
+
+@keyframes moveImgLeft {
+    0%{
+        translate: 100%;
+    }
+    100%{
+        translate: 0%;
+    }
+}
+
+@keyframes moveImgRight {
+    0%{
+        translate: 0%;
+    }
+    100%{
+        translate: 100%;
+    }
+}
+
+@keyframes moveIsLeft {
+    0%{
+        translate: 0px;
+    }
+    100%{
+        translate: -80px;
+    }
+}
+
+@keyframes moveRight {
+    0%{
+        translate: 0%;
+        width: 60%;
+    }
+    100%{
+        translate: -150%;
+        width: 40%;
+    }
+}
+
+@keyframes moveLeft {
+    0%{
+        translate: -100%;
+        width: 40%;
+    }
+    100%{
+        translate: 0%;
+        width: 60%;
+    }
+}
+
+@keyframes moveRightM {
+    0%{
+        translate: 0px;
+    }
+    100%{
+        translate: 20px;
+    }
+}
+
+@keyframes moveLeftM {
+    0%{
+        translate: 20px;
+    }
+    100%{
+        translate: 0px;
+    }
+}
+
+@keyframes moveIlRightM {
+    0%{
+        translate: -20px;
+    }
+    100%{
+        translate: 0px;
+    }
+}
+
+@keyframes moveIlLeftM {
+    0%{
+        translate: 0px;
+    }
+    100%{
+        translate: -20px;
+    }
+}
+
+@media (max-width : 775px){
+    .container{
+        flex-direction: column;
+    }
+    .thumbnail{
+        height: 30vh;
+        width: calc(100% - 20px);
+        z-index: 2;
+        top: 0%;
+        justify-content: end;
+    }
+
+    .isLand{
+        width: calc(100% - 20px);
+        height: 90%;
+    }
+
+    .blogBox1{
+        display: none;
+    }
+
+    .blogBox2{
+        margin: auto;
+        margin-left: 20px;
+        margin-top: calc(30vh + 20px);
+        width: calc(100% - 20px);
+    }
+
+    .moveRight .blogBox2{
+        animation: moveIlLeftM 0.4s ease forwards;
+    }
+
+    .moveLeft .blogBox2{
+        animation: moveIlRightM 0.4s ease forwards;
+    }
+
+    .moveRight .thumbnail{
+        animation: moveRightM 0.4s ease forwards;
+    }
+    
+    .moveLeft .thumbnail{
+        animation: moveLeftM 0.4s ease forwards;
+    }
+
+    .moveRight .isLand{
+        animation: moveIlLeftM 0.4s ease forwards;
+    }
+    
+    .moveLeft .isLand{
+        animation: moveIlRightM 0.4s ease forwards;
+    }
+       
+}

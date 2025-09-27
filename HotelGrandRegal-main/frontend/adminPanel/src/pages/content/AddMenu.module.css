@@ -1,0 +1,84 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    width: 100vw;
+    max-width: 560px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+}
+
+.thumbLabel div{
+    width:200px;
+    height:200px; 
+    background:red;
+    border-radius: 50%;
+}
+
+.thumbInput{
+    display: none;
+}
+
+.input1{
+    width:100%;
+    padding:5px 20px;
+    border: 1px solid gray;
+    border-radius:5px;
+    font-family:arial;
+    text-align:center;
+    font-size:16px;
+}
+
+.input2{
+    width: 100%;
+    padding: 5px 20px;
+    padding-right: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.box2 select{
+    width: 100%;
+    padding: 5px 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.shefSpecial{
+    display: flex;
+    gap: 10px;
+}
+
+.addBtn{
+    padding: 3px 20px;
+    background-color: #071f6e;
+    border: 0px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+}

@@ -1,0 +1,12 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#mainContentDiv{
+  width: 100vw;
+  height: max-content;
+  margin-top: 150px;
+}

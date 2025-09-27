@@ -1,0 +1,13 @@
+.starBox{
+    height: 20px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.fullStar, .blankStar, .halfStar{
+    width: 15px;
+}
